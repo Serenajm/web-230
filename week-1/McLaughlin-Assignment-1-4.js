@@ -1,3 +1,12 @@
+/*
+============================================
+; Title:  McLaughlin-Assignment-1-4.js
+; Author: Serena McLaughlin
+; Date:   30 November 2018
+; Description: Demonstrates how to assign and output variable values
+;===========================================
+*/
+
 var firstName = "Serena";
 console.log(firstName);
 
