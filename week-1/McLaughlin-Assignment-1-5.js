@@ -1,3 +1,12 @@
+/*
+============================================
+; Title:  McLaughlin-Assignment-1-5
+; Author: Serena McLaughlin
+; Date:   01 December 2018
+; Description: Demonstrates how to assign and output variable values
+;===========================================
+*/
+
 var myFirstName = "Serena";
 var myLastName = "McLaughlin";
 var todaysDate = new Date().toLocaleDateString();
