@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  functions.js
+; Title:  function-properties.js
 ; Author: Serena McLaughlin
 ; Date:   06 December 2018
 ; Description: Demonstrates how to define and call function properties
