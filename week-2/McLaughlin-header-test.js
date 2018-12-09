@@ -1,9 +1,8 @@
 /*
 ============================================
 ; Title:  McLaughlin-header-test.js
-; Author: Professor Krasso 
+; Author: Serena McLaughlin
 ; Date:   06 December 2018
-; Modified By: Serena McLaughlin
 ; Description: Displays a formatted header
 ;===========================================
 */
