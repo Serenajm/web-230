@@ -22,3 +22,4 @@ var featuredAnimal = animals["Fox"];
 
 //Output
 console.log(animals);
+
