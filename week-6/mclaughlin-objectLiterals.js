@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  mclaughlin-object-literals.js
+; Title:  mclaughlin-objectLiterals.js
 ; Author: Serena McLaughlin
 ; Date:   16 January 2019
 ; Description: Creating an object and outputting the properties
