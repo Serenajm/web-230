@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  mclaughlin-exception-handling.js
+; Title:  mclaughlin-exceptionHandling.js
 ; Author: Serena McLaughlin
 ; Date:   16 January 2019
 ; Description: Creating a try/catch/finally block
