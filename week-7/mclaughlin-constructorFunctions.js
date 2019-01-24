@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  mclaughlin-constructor-functions.js
+; Title:  mclaughlin-constructorFunctions.js
 ; Author: Serena McLaughlin
 ; Date:   23 January 2019
 ; Description: Creating constructor functions and outputting the results
