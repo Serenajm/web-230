@@ -1,0 +1,50 @@
+<!--
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello</title>
+</head>
+<body>
+<h1 id="dbHeader">Week 7 Discussion Board</h1>
+<p class="selectorClass"></p>
+</body>
+</html>
+
+<script>
+
+  document.querySelector("p.selectorClass").innerHTML = "Enjoy my invalid selectors";
+
+  document.querySelector("#dbHeader").style.color = "green";
+
+</script>
+-->
+
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Discussion 7.1</title>
+    <author>Jordan Hennessy</author>
+    <style>
+      #greeting {margin: auto; color:cadetblue; text-decoration: none;}
+      #text {margin: auto;}
+      div {width: 80%; margin: auto; display: block;}
+    </style>
+    <script>
+      function changeColor() {
+       document.getElementById("greeting").color = 'aquamarine';
+      };
+      function showText() {
+        document.getElementByClass("<p>").innerHTML = "It's so nice to meet you!";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1 id="greeting" xx="changeColor()">Hello</h1>
+      <p id="text" xx="showText()"></p>
+    </div>
+  </body>
+</html>
