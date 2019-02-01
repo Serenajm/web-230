@@ -1,0 +1,40 @@
+body {
+    background-color: darkseagreen;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family:  "Roboto", "Arial", sans-serif;
+}
+
+nav {
+    background-color: seagreen;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    float: center;
+    margin: 0px auto;
+}
+
+table {
+    width: 20px; 
+    margin-top: 20px;
+}
+
+table, td {
+    border-collapse: collapse;
+    border: 1px solid rgb(122, 122, 122);
+    color: black;
+    padding: 3px;
+  }
+
+table, th {
+    background-color: seagreen;
+    color: white;
+    text-align: left;
+    padding: 3px;
+}
+
+tr:nth-child(even) {background: rgb(170, 192, 173)}
+
+tr:nth-child(odd) {background: white}

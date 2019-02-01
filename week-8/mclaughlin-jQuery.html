@@ -1,0 +1,83 @@
+<!--
+============================================
+; Title:  mclaughlin-jQuery.html
+; Author: Serena McLaughlin
+; Date:   31 January 2019
+; Description: The uses of jQuery
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Click</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="C:\Users\Serena\bu-webdev\web-231\week-8\jQuery.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+</head>
+
+<nav></nav>
+
+<body>
+
+<h1>Vehicula Arcu</h1>
+<p>Cras ex urna, hendrerit ac augue ut, lacinia vehicula arcu. Curabitur consectetur placerat odio et pellentesque. Donec a ex egestas, accumsan est nec, lobortis felis. Donec pharetra euismod fringilla. Duis at finibus mi. Etiam tristique rutrum ante, volutpat ultricies urna varius ac. Donec risus risus, vulputate nec sagittis eget, vestibulum a sem. Sed eget dui at risus bibendum consequat iaculis malesuada ante. Nunc volutpat fringilla semper. Duis vitae dui urna. Proin vel felis ac nisl porta commodo. Pellentesque et turpis maximus, tempor massa ac, convallis quam. Sed fringilla semper eros, eu porta eros efficitur non.</p>
+
+<button id="btn1">Toggle</button>
+
+<script>
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+        $("p").toggle("p");
+      });
+    });
+    </script>
+
+<br/>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Type</th> 
+      </tr>
+    <tr>
+        <td><a href="#" class="fruitId">1</a></td>
+        <td>Apple</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">2</a></td>
+        <td>Orange</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">3</a></td>
+        <td>Watermelon</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">4</a></td>
+        <td>Grapes</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">5</a></td>
+        <td>Kiwi</td>
+    </tr>
+</table>
+
+
+<script>
+    $(function () {
+        $("p").click(function () {
+            $(this).css("background-color", "red");
+            $(this).css("color", "white");
+        });
+        $(".fruitId").click(function (event) {
+            event.preventDefault();
+            var fruitId = $(this).text();
+            var fruitType = $(this).closest("td").next().text();
+            alert("{fruit_id: " + fruitId + ", fruit_type: " + fruitType + "}");
+        });
+    });
+</script>
+
+</body>
+</html>
