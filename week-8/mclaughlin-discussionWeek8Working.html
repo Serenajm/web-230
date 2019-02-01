@@ -1,0 +1,31 @@
+<!--
+============================================
+; Title:  mclaughlin-discussionWeek8Working.html
+; Author: Serena McLaughlin
+; Date:   30 January 2019
+; Description: Fixing broken jQuery
+;===========================================
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").append(" <b>Oh Hi!</b>");
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">Click Here</button>
+
+<h1>Hello!</h1>
+<p></p>
+
+</body>
+</html>

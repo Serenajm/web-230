@@ -1,0 +1,58 @@
+<!--
+============================================
+; Title:  mclaughlin-dynamicHtml.html
+; Author: Serena McLaughlin
+; Date:   31 January 2019
+; Description: Creating dynamic HTML
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic HTML</title>
+
+    <link rel="stylesheet" href="C:\Users\Serena\bu-webdev\web-231\week-8\dynamic.css">
+
+    <style type="text/css">
+      ul {
+        list-style: none;
+      }
+    </style>
+
+</head>
+<body>
+  
+<nav></nav>
+
+<div id="fruits"></div>
+
+<script>
+
+//fruit constructor object with two parameters
+  function Fruit(id, type) {
+    this.id = id;
+    this.type = type;
+  }
+  
+//array of five fruit objects including id and type
+  var fruits = [
+    new fruit(4, 'Apple'),
+    new fruit(2, 'Orange'),
+    new fruit(7, 'Watermelon'),
+    new fruit(8, 'Grapes'),
+    new fruit(5, 'Kiwi')
+  ];
+
+
+    var out = "<h2>Fruits</h2><ul>";
+    for (var x = 0; x < fruits.length; x++) {
+        out += "<li>" + fruits[x].id + ' ' + fruits[x].type + "</li>";
+    }
+    out += "</ul>";
+    document.getElementById('fruits').innerHTML = out;
+</script>
+
+</body>
+</html>

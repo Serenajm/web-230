@@ -1,0 +1,14 @@
+body {
+    background-color: darkseagreen;
+}
+
+nav {
+    background-color: seagreen;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+ul {
+    float: center;
+    margin: 0px auto;
+}
