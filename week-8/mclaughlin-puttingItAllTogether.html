@@ -1,0 +1,73 @@
+<!--
+============================================
+; Title:  mclaughlin-puttingItAllTogether.html
+; Author: Serena McLaughlin
+; Date:   30 January 2019
+; Description: Combining HTML with javascript and jquery
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="C:\Users\Serena\bu-webdev\web-231\week-8\puttingItAllTogether.css">
+
+  <style type="text/css">
+    #employee tbody tr:hover {
+      cursor: pointer;
+      background-color: #ffff99;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="emps"></div>
+
+<script>
+//employee constructor object with four parameters
+  function Person(id, first, last, title) {
+    this.id = id;
+    this.firstName = first;
+    this.lastName = last;
+    this.title = title;
+  }
+  
+//array of five employee objects including id, first name, last name and title
+  const employees = [
+    new Person(132, 'Sam', 'McJones', 'Designer'),
+    new Person(342, 'Jane', 'Jones', 'Programmer'),
+    new Person(231, 'Tammy', 'Charles', 'Creative Director'),
+    new Person(845, 'Alice', 'Baxter', 'Manager'),
+    new Person(123, 'Tom', 'Davids', 'Developer')
+  ];
+
+</script>
+
+<script type="text/javascript">
+    function getEmployee() {
+
+    }
+  
+  $(function () {
+    $("table tr").click(function () {
+        $(this).css("background-color", "green");
+                $(this).css("color", "white");
+            });
+            //event window which appers when the employee is clicked
+            $("emps").click(function (event) {
+                event.preventDefault();
+                var employeeId = $(this).text();
+                var employeeType = $(this).closest("td").next().text();
+                alert( employee.id + " " + employee.firstName + " " + employee.lastName + " " + employee.type );
+    })
+  });
+</script>
+
+</body>
+</html>
