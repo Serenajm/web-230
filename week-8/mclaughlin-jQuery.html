@@ -27,6 +27,7 @@
 
 <button id="btn1">Toggle</button>
 
+<!--Controls the toggle function of a button-->
 <script>
     $(document).ready(function(){
       $("#btn1").click(function(){
@@ -36,6 +37,8 @@
     </script>
 
 <br/>
+
+<!--html table containing two feilds of fruits id and type-->
 <table>
     <tr>
         <th>ID</th>
@@ -63,13 +66,13 @@
     </tr>
 </table>
 
-
 <script>
     $(function () {
         $("p").click(function () {
-            $(this).css("background-color", "red");
+            $(this).css("background-color", "green");
             $(this).css("color", "white");
         });
+        //event window which appers when the fruit id is clicked
         $(".fruitId").click(function (event) {
             event.preventDefault();
             var fruitId = $(this).text();

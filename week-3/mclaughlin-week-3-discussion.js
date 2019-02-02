@@ -31,3 +31,41 @@ if (time < 10) {
     console.log("Is it dinner time yet?");
 }
 //output
+
+
+/*
+============================================
+; Title:  sanchez-assignment-3.1.js
+; Author: Professor Krasso
+; Date:   12/13/2018
+; Modified By: Gabriel Sanchez
+; Description: Displays a formatted header
+;
+;===========================================
+*/
+
+// Code goes here..
+
+/*  The program should not execute and there should be at least two errors in the code you post to Blackboard.
+*/
+
+// One Agument, if statement
+
+
+var age = 27;
+if ( age === 27 ){
+console.log("Correct, That is Gabriel's Age");
+}
+else{
+console.log("Incorrect, That's not Gabriel's Age");
+}
+
+// Display output
+
+
+/* Expected output
+Correct, That is Gabriel's Age
+*/
+
+// end of program...
+
